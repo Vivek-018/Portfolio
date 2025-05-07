@@ -1,28 +1,42 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const About = () => {
   return (
     <section id="about" className="py-20 ink-splash">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="section-heading text-3xl md:text-4xl font-bold mb-16 font-cinzel text-center">About Me</h2>
+        <h2 className="section-heading text-3xl md:text-4xl font-bold mb-16 font-cinzel text-center">
+          About Me
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <h3 className="text-2xl font-bold mb-4 font-cinzel text-red-700">The Way of the Digital Artist</h3>
+            <h3 className="text-2xl font-bold mb-4 font-cinzel text-red-700">
+              The Way of the Impactful Engineer
+            </h3>
             <div className="space-y-6 calligraphy">
               <p className="text-gray-300">
-                I am Vivek Kumar, a passionate developer and digital artist inspired by the philosophy of Miyamoto
-                Musashi, Japan's legendary swordsman and artist. Like Musashi, I believe in the harmony of technical
-                precision and artistic expression.
+                I’m <strong>Vivek Kumar</strong>, a software engineer and
+                full‑stack web developer who lives and breathes technology. For
+                me, writing code isn’t just about syntax or frameworks—it’s
+                about using every line to make someone’s day a little easier, to
+                spark new possibilities, and to leave a positive mark on the
+                world.
               </p>
               <p className="text-gray-300">
-                My journey in technology began with a fascination for how digital tools can transform ideas into
-                reality. Over the years, I've cultivated a disciplined approach to my craft, embracing both innovation
-                and tradition.
+                My journey began the moment I saw how a simple app could connect
+                people across continents. Since then, I’ve immersed myself in
+                front‑end and back‑end tools alike—crafting intuitive UIs,
+                architecting resilient APIs, and deploying scalable services.
+                Along the way I learned that the secret ingredient to any great
+                project is empathy: understanding real human problems before
+                reaching for the keyboard.
               </p>
               <p className="text-gray-300">
-                When I'm not coding, you can find me studying traditional art forms, practicing meditation, or exploring
-                the philosophical teachings of ancient masters to bring their timeless wisdom into my modern creative
-                process.
+                When I’m not building features or debugging late‑night
+                deployments, you’ll find me mentoring aspiring developers,
+                diving into the latest tech talks, or sketching out ideas in a
+                notebook. My true north is impact—so whether it’s a passion
+                project or a client solution, I aim to deliver work that
+                matters.
               </p>
             </div>
           </div>
@@ -54,7 +68,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -15,19 +15,28 @@ const Hero = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="brush-border p-8 md:p-12 bg-black/30 backdrop-blur-sm">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 font-cinzel">
-            <span className="text-red-700">VIVEK</span> <span className="text-gray-300">KUMAR</span>
+            <span className="text-red-700">VIVEK</span>{" "}
+            <span className="text-gray-300">KUMAR</span>
           </h1>
-          <h2 className="text-xl md:text-3xl mb-8 text-gray-300 font-light">Developer • Engineer • Tech Enthusiast</h2>
+          <h2 className="text-xl md:text-3xl mb-8 text-gray-300 font-light">
+            Developer • Engineer • Tech Enthusiast
+          </h2>
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-gray-400 calligraphy">
-            "In the midst of chaos, there is also opportunity."
+            “Building with heart, shipping with purpose.”
             <br />
-            Crafting digital experiences with the tranquility and precision of a master samurai.
+            Crafting features that matter, for people who matter.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link href="#projects" className="zen-button text-red-700 hover:text-red-600 px-8 py-3 font-cinzel">
+            <Link
+              href="#projects"
+              className="zen-button text-red-700 hover:text-red-600 px-8 py-3 font-cinzel"
+            >
               View Projects
             </Link>
-            <Link href="#philosophy" className="zen-button text-gray-300 hover:text-white px-8 py-3 font-cinzel">
+            <Link
+              href="#philosophy"
+              className="zen-button text-gray-300 hover:text-white px-8 py-3 font-cinzel"
+            >
               My Philosophy
             </Link>
           </div>
@@ -40,7 +49,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

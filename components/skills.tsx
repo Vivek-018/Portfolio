@@ -1,5 +1,5 @@
 import type React from "react"
-import { Code, Palette, Globe, Database, Server, Cpu , BrainIcon} from "lucide-react"
+import { Code, Palette, Globe, Database, Server, Cpu , BrainIcon , Code2Icon} from "lucide-react"
 
 const SkillCategory = ({
   title,
@@ -42,7 +42,8 @@ const Skills = () => {
         { name: "HTML/CSS", level: 95 },
         { name: "JavaScript", level: 90 },
         { name: "React", level: 85 },
-        { name: "Bootstrap", level: 90 },
+        { name: "Next.js", level: 90 },
+        { name: "Tailwind CSS", level: 80 },
       ],
     },
     {
@@ -51,12 +52,12 @@ const Skills = () => {
       skills: [
         { name: "UI/UX Design", level: 80 },
         { name: "Figma", level: 85 },
-        { name: "Adobe Photoshop", level: 75 },
+        { name: "Canva", level: 75 },
         { name: "Responsive Design", level: 90 },
       ],
     },
     {
-      title: "Web Technologies",
+      title: "API & Web Tech",
       icon: Globe,
       skills: [
         { name: "RESTful APIs", level: 85 },
@@ -71,8 +72,6 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 80 },
         { name: "Express", level: 75 },
-        { name: "Python", level: 70 },
-        { name: "PHP", level: 65 },
       ],
     },
     {
@@ -81,28 +80,42 @@ const Skills = () => {
       skills: [
         { name: "MongoDB", level: 75 },
         { name: "MySQL", level: 80 },
-        { name: "Firebase", level: 85 },
         { name: "PostgreSQL", level: 70 },
       ],
     },
     {
-      title: "DevOps",
+      title: "DevOps & Cloud",
       icon: Cpu,
       skills: [
-        { name: "Git/GitHub", level: 90 },
         { name: "Docker", level: 65 },
-        { name: "CI/CD", level: 70 },
-        { name: "Testing", level: 75 },
+        { name: "Linode VPS", level: 75 },
       ],
     },
     {
-      title: "GEN AI & Automation",
+      title: "AI & Automation",
       icon: BrainIcon,
       skills: [
-        { name: "Huggingface", level: 90 },
-        { name: "Docker", level: 65 },
-        { name: "CI/CD", level: 70 },
-        { name: "Testing", level: 75 },
+        { name: "Puppeteer", level: 90 },
+      ],
+    },
+    {
+      title: "Languages & Tools",
+      icon: Code2Icon,
+      skills: [
+        { name: "JavaScript", level: 90 },
+        { name: "Python", level: 65 },
+        { name: "C++", level: 70 },
+        { name: "Git & GitHub", level: 80 },
+        { name: "Jira", level: 80 },
+      ],
+    },
+    {
+      title: "Testing & QA",
+      icon: Code2Icon,
+      skills: [
+        { name: "Jest", level: 90 },
+        { name: "Unit & Integration Testing", level: 65 },
+       
       ],
     },
   ]

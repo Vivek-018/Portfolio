@@ -24,28 +24,28 @@ const PhilosophyCard = ({
 const Philosophy = () => {
   const philosophies = [
     {
-      title: "Empty Mind",
+      title: "Empathy First",
       icon: Moon,
       description:
-        "I approach each project with a clear mind, free from preconceptions. This allows me to see the true nature of problems and find innovative solutions.",
+        "I begin every project by stepping into the user’s shoes—listening, observing, and understanding real needs—so that each feature truly makes life easier.",
     },
     {
-      title: "Dual Mastery",
+      title: "Impactful Innovation",
       icon: Sun,
       description:
-        "Like Musashi's two-sword technique, I balance technical expertise with artistic sensibility, creating work that is both functional and beautiful.",
+        "I don’t chase novelty for its own sake. I blend proven practices with fresh ideas to build solutions that drive meaningful change.",
     },
     {
-      title: "Constant Refinement",
+      title: "Lifelong Learning",
       icon: Feather,
       description:
-        "I believe in continuous improvement, constantly honing my skills and refining my approach to create ever more elegant digital experiences.",
+        "The tech world never stands still, and neither do I. Every new framework, every late‑night debugging session, sharpens my craft.",
     },
     {
-      title: "True Direction",
+      title: "Purposeful Direction",
       icon: Compass,
       description:
-        "In the digital landscape, I maintain a clear vision and purpose, ensuring that every element of my work serves the greater objective.",
+        "Guided by a clear vision—how will this touch lives?—I ensure every line of code and design choice aligns with a greater goal.",
     },
   ]
 
@@ -61,7 +61,7 @@ const Philosophy = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-heading text-3xl md:text-4xl font-bold mb-6 font-cinzel text-center">My Philosophy</h2>
         <p className="text-center text-gray-400 mb-16 max-w-3xl mx-auto calligraphy">
-          Inspired by Miyamoto Musashi's "Book of Five Rings," I apply these timeless principles to my digital craft.
+        Four guiding principles that shape how I build software and drive real‑world impact.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -77,8 +77,8 @@ const Philosophy = () => {
 
         <div className="mt-16 p-8 border border-red-900/20 bg-black/50 text-center">
           <blockquote className="text-xl italic text-gray-300 calligraphy">
-            "You must understand that there is more than one path to the top of the mountain."
-            <footer className="text-red-700 mt-4 font-cinzel">— Miyamoto Musashi</footer>
+          "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them."
+            <footer className="text-red-700 mt-4 font-cinzel">— Steve Jobs</footer>
           </blockquote>
         </div>
       </div>

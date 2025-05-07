@@ -35,6 +35,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="#experience" className="text-gray-400 hover:text-red-700 transition-colors">
+                  Experience
+                </Link>
+              </li>
+              <li>
                 <Link href="#skills" className="text-gray-400 hover:text-red-700 transition-colors">
                   Skills
                 </Link>
@@ -78,9 +83,9 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-red-900/10 text-center text-gray-500">
           <p>© {currentYear} Vivek Kumar. All rights reserved.</p>
           <p className="mt-2 text-sm calligraphy"> Vivek Kumar. All rights reserved.</p>
-          <p className="mt-2 text-sm calligraphy">
+          {/* <p className="mt-2 text-sm calligraphy">
             "Designed with the tranquility of a master samurai and the artistic spirit of traditional painting."
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

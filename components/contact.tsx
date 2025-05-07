@@ -68,11 +68,11 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-bold mb-8 font-cinzel text-red-700">Contact Information</h3>
 
-            <ContactInfo icon={Mail} title="Email" content="lingadevaru.hp@example.com" />
+            <ContactInfo icon={Mail} title="Email" content="vr7064300@gmail.com" />
 
-            <ContactInfo icon={Phone} title="Phone" content="+91 9876543210" />
+            <ContactInfo icon={Phone} title="Phone" content="+91 6239060459" />
 
-            <ContactInfo icon={MapPin} title="Location" content="Bangalore, Karnataka, India" />
+            <ContactInfo icon={MapPin} title="Location" content="Gurugram, Haryana, India" />
 
             <div className="mt-12">
               <h3 className="text-xl font-bold mb-6 font-cinzel text-gray-300">Follow Me</h3>

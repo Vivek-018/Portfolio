@@ -1,5 +1,5 @@
 import type React from "react"
-import { GraduationCap, Award, BookOpen } from "lucide-react"
+import { GraduationCap, Award, BookOpen, School, School2 } from "lucide-react"
 
 type Education = {
   id: number
@@ -63,65 +63,71 @@ const Education = () => {
   const educationItems: Education[] = [
     {
       id: 1,
-      degree: "Master of Computer Applications",
-      institution: "Karnataka University",
-      location: "Dharwad",
-      period: "2018 - 2020",
+      degree: "B.Tech in Computer Engineering",
+      institution: "I.k Gujral Punjab Technical University",
+      location: "Kapurthala",
+      period: "2020 - 2024",
       description:
-        "Specialized in advanced software development and system architecture with a focus on modern web technologies and application design.",
+        "Specialized in software development, algorithms, and systems design with hands‑on projects in web apps, embedded systems, and machine learning.Proven teamwork, problem‑solving skills, and a track record of delivering technical solutions.",
       icon: GraduationCap,
     },
     {
       id: 2,
-      degree: "Bachelor of Computer Applications",
-      institution: "Bangalore Institute of Technology",
-      location: "Bangalore",
-      period: "2015 - 2018",
+      degree: "MERN Stack Development",
+      institution: "Ducat Education",
+      location: "Gurugram",
+      period: "01/2024 - 07/2024",
       description:
-        "Gained a strong foundation in computer science fundamentals, programming languages, and software development methodologies.",
-      icon: BookOpen,
+        "Specialized in MERN stack development, building real‑world applications using MongoDB, Express, React, and Node.js.Gained hands‑on experience designing, developing, and deploying full‑stack web solutions end‑to‑end.",
+      icon: School2,
     },
     {
       id: 3,
-      degree: "Diploma in UI/UX Design",
-      institution: "Design Academy",
-      location: "Mysore",
-      period: "2017",
+      degree: "Higher Secondary Education",
+      institution: "St. Soldier Divine Public School",
+      location: "Jalandhar",
+      period: "2018 - 2020",
       description:
-        "Intensive program covering user interface design principles, user experience research, prototyping, and modern design tools.",
-      icon: Award,
+        "Built solid foundations in core subjects—mathematics, physics, chemistry, and introductory computer concepts—fueling analytical thinking.Developed teamwork and study habits through collaborative projects and extracurricular activities.",
+      icon: School,
     },
+    {
+      id: 4,
+      degree: "Secondary Education",
+      institution: "L.J.N Dav Public School",
+      location: "Jalandhar",
+      period: "2018",
+      description:
+      "Mastered core subjects—mathematics, science, english and introductory computing—while developing disciplined study habits and teamwork through extracurricular activities.",
+      icon: School,
+    },
+
   ]
 
   const certificates: Certificate[] = [
     {
       id: 1,
-      title: "Full Stack Web Development",
+      title: "Complete Web Development course",
       issuer: "Udemy",
-      date: "2021",
+      date: "2025",
       url: "#",
     },
     {
       id: 2,
-      title: "Advanced React & Redux",
-      issuer: "Coursera",
-      date: "2020",
-      url: "#",
+      title: "Complete Full-Stack Web Development Bootcamp",
+      issuer: "Udemy",
+      date: "2023",
+      url: "https://www.udemy.com/certificate/UC-543faea7-a944-4dee-907d-c23761721b64/",
     },
     {
       id: 3,
-      title: "UI/UX Design Masterclass",
-      issuer: "Interaction Design Foundation",
-      date: "2019",
-      url: "#",
+      title: "IT Fundamentals:Everything You Need To Know about IT",
+      issuer: "Udemy",
+      date: "2023",
+      url: "https://www.udemy.com/certificate/UC-43ddcb48-fb4c-4cb6-833e-006516026c90/",
     },
-    {
-      id: 4,
-      title: "Japanese Art & Philosophy",
-      issuer: "MasterClass",
-      date: "2022",
-      url: "#",
-    },
+
+
   ]
 
   return (
