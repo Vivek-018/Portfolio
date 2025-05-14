@@ -36,27 +36,64 @@ const Contact = () => {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitMessage, setSubmitMessage] = useState("")
+  const [errorMessage, setErrorMessage] = useState("")
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   setIsSubmitting(true)
+
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     setIsSubmitting(false)
+  //     setSubmitMessage("Your message has been sent successfully!")
+  //     setFormData({ name: "", email: "", subject: "", message: "" })
+
+  //     // Clear success message after 5 seconds
+  //     setTimeout(() => {
+  //       setSubmitMessage("")
+  //     }, 5000)
+  //   }, 1500)
+  // }
+
+  
+  const handleSubmit = async (e:React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitMessage("Your message has been sent successfully!")
-      setFormData({ name: "", email: "", subject: "", message: "" })
+    try {
 
-      // Clear success message after 5 seconds
-      setTimeout(() => {
-        setSubmitMessage("")
-      }, 5000)
-    }, 1500)
+      const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT
+      const res = await fetch(
+        `${endpoint}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      )
+
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+
+      setSubmitMessage("Your message has been sent successfully! 🎉")
+      setFormData({ name: "", email: "", subject: "", message: "" })
+    } catch (err) {
+      console.error("Formspree error:", err)
+      setErrorMessage(
+        "Oops! Something went wrong. Please try again later."
+      )
+    } finally {
+      setIsSubmitting(false)
+      // clear after 5s
+      // both error message and success message make empty
+      setTimeout(() => setSubmitMessage(""), 5000)
+      setTimeout(() => setErrorMessage(""), 5000)
+
+    }
   }
 
   return (
@@ -213,6 +250,11 @@ const Contact = () => {
                 )}
               </button>
 
+              {errorMessage && (
+                <div className="bg-red-900/10 border border-red-700/30 text-red-500 px-4 py-3">
+                  {errorMessage}
+                </div>
+              )}
               {submitMessage && (
                 <div className="bg-green-900/10 border border-green-700/30 text-green-500 px-4 py-3">
                   {submitMessage}

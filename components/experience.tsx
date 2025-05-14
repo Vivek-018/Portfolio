@@ -9,9 +9,9 @@ const Experience = () => {
       date: "Mar 2025 - Present",
       location: "Gurugram, India",
       description: [
-        "Led the development of responsive, high-performance web applications used by over 1 million users monthly.",
-        "Mentored junior developers and implemented code review best practices to improve team efficiency.",
-        "Integrated accessibility standards (WCAG 2.1) across all applications, improving usability for all users.",
+        "Building the backend 'engine' for a project, creating efficient APIs using Node.js and Express to power seamless user experiences.",
+        "Designing and implementing the database structure with PostgreSQL and Drizzle, ensuring reliable and well-organized data.",
+        "Writing robust and maintainable backend code using TypeScript, bringing type safety and clarity to the project's foundation.",
       ],
     },
     {
@@ -20,9 +20,11 @@ const Experience = () => {
       date: "Sep 2024 - Mar 2025",
       location: "Gurugram, India",
       description: [
-        "Built scalable applications using React, Node.js, and MongoDB, supporting 500k+ monthly active users.",
-        "Collaborated with cross-functional teams to deliver product features using Agile methodologies.",
-        "Optimized application performance through code splitting and lazy loading, reducing load times by 35%.",
+        "Developed scalable web applications using React with Vite for the frontend and Node.js with Express for the backend, integrating RESTful APIs for seamless data exchange.",
+        "Designed and implemented database schemas using MongoDB, PostgreSQL, and Drizzle ORM, ensuring efficient data modeling and querying.",
+        "Implemented automated testing using Jest for unit testing and QA testing, ensuring high code quality and reliability.",
+        "Utilized Puppeteer for web automation tasks, streamlining processes and improving efficiency.",
+        "Gained hands-on experience with WebRTC for real-time communication, WebSockets for bi-directional communication, and Docker for containerization, enhancing application performance and deployment."
       ],
     },
     {
@@ -31,9 +33,10 @@ const Experience = () => {
       date: "Jan 2024 - Jul 2024",
       location: "Gurugram, India",
       description: [
-        "Developed client-facing websites using HTML, CSS, JavaScript, and WordPress.",
-        "Worked closely with designers to transform mockups into fully functional web pages.",
-        "Gained hands-on experience with version control using Git and collaborated with a small development team.",
+        "Acquired foundational knowledge and hands-on experience in building web applications using the MERN stack, covering HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and Mongoose.",
+        "Developed skills in designing and implementing dynamic user interfaces using React, creating RESTful APIs with Node.js and Express, and interacting with MongoDB databases using Mongoose.",
+        "Gained proficiency in version control using Git and collaboration tools like GitHub, enabling efficient code management and team collaboration.",
+        "Mastered the fundamentals of web development, including front-end and back-end technologies, and learned to integrate various tools and frameworks to deliver scalable and efficient web solutions."
       ],
     },
   ]
